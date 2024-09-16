@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelTogether</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page">
+        <div id="welcome">
+            <h1 id="main-heading">Welcome to Travel Together</h1>
+            <h2 id="subheading">Discover new places and meet fellow travelers!</h2>
+        </div>
+        <div id="auth">
+            <form id="signup-form">
+                <h2>Sign Up</h2>
+                <input type="text" id="signup-username" placeholder="Username" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <button id="signUp" type="submit">Sign Up</button>
+            </form>
+            <form id="login-form">
+                <h2>Log In</h2>
+                <input type="text" id="login-username" placeholder="Username" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button id="login" type="submit">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Page -->
+    <div id="main-page" style="display: none;">
+        <header>
+            <h1>TravelTogether</h1>
+            <nav>
+                <button id="create-group-btn">Create Group</button>
+                <button id="logout-btn">Logout</button>
+                <button id="profile-btn">Profile</button>
+                <button id="settings-btn">Settings</button>
+            </nav>
+        </header>
+        <main>
+            <aside id="hot-destinations">
+                <h2>Hot Destinations</h2>
+                <!-- Example destinations -->
+                <ul>
+                    <li>UAE</li>
+                    <li>Qatar</li>
+                    <li>USA</li>
+                    <li>UK</li>
+                </ul>
+            </aside>
+            <section id="available-groups">
+                <h2>Available Groups</h2>
+                <ul id="group-list">
+                    <!-- Groups will be dynamically added here -->
+                </ul>
+            </section>
+            <!-- Chat Section -->
+            <div id="chat-section">
+                <div id="chat-group-name"></div>
+                <div id="chat-messages"></div>
+                <input id="message-input" type="text" placeholder="Type a message">
+                <button id="send-btn">Send</button>
+                <button id="record-btn">Record</button>
+                <button id="back-btn">Back</button>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
